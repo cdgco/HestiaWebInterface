@@ -16,7 +16,7 @@ Extract Hestia Web Interface to the blank domain directory.
 #### Step 4:
 Update the Hestia Web Interface backend on your Hestia server.
 ```shell
-bash <(curl -s https://cdgco.github.io/backend)
+bash <(curl -s https://cdgco.github.io/hst-backend)
 ```
 
 Upgrade Complete

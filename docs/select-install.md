@@ -11,7 +11,7 @@ Extract Hestia Web Interface to a blank domain directory.
 #### Step 3:
 Install the Hestia Web Interface backend on your HestiaCP server.
 ```shell
-bash <(curl -s https://cdgco.github.io/backend)
+bash <(curl -s https://cdgco.github.io/hst-backend)
 ```
   
 When promted during the automatic installer to "Enter the full web address of your installation", enter the URL where Hestia Web Interface will be accessed from, including the "http(s)://" and the following "/".
