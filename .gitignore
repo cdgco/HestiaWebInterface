@@ -1,0 +1,12 @@
+node_modules
+includes/config.php
+plugins/ftp
+plugins/hwi-billing
+plugins/billing
+plugins/billing-client
+plugins/hwi-softaculous
+tmp/config.json
+bfg.jar
+config.json
+test.php
+yarn-error.log

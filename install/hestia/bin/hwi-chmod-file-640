@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Includes
+source $HESTIA/func/main.sh
+source $HESTIA/conf/hestia.conf
+PATH="$PATH:/usr/local/sbin:/sbin:/usr/sbin:/root/bin"
+
+
+username=$1
+domain=$2
+
+chmod 640 /home/$username/conf/dns/$domain.db
+
+exit
+
