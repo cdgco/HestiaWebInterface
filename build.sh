@@ -28,7 +28,7 @@ Hestia Web Interface is a PHP Control Panel and Web Interface that integrates wi
 - Dynamic design with mobile support
 - Multiple themes including dark theme
 - Integrations with Auth0, Cloudflare, Interakt, Net2FTP and Google Analytics
-- Plugin system with webmail (Rainloop), FTP (MonstaFTP) and billing plugins
+- Plugin system with webmail (Rainloop), FTP (MonstaFTP) and billing plugins coming soon.
 - Web based installation and configuration within admin panel
 
 ## Demo

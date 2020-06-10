@@ -2,7 +2,7 @@
 To selectively install HWI or to install the web interface on a non-HestiaCP server, follow these steps:
 
 #### Step 1:
-[Download the latest release](https://github.com/cdgco/HestiaWebInterface/archive/v2.2.0.zip) of HWI from GitHub.
+[Download the latest release](https://github.com/cdgco/HestiaWebInterface/archive/v0.1.0-Beta.zip) of HWI from GitHub.
 
 #### Step 2:
 Extract Hestia Web Interface to a blank domain directory.

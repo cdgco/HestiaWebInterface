@@ -7,7 +7,7 @@ Delete all files in your existing HWI web directory except includs/config.php. E
 
 
 #### Step 2:
-[Download the latest release](https://github.com/cdgco/HestiaWebInterface/archive/v1.0.0.zip) of HWI from GitHub.
+[Download the latest release](https://github.com/cdgco/HestiaWebInterface/archive/v0.1.0-Beta.zip) of HWI from GitHub.
 
 #### Step 3:
 Extract Hestia Web Interface to the blank domain directory.
