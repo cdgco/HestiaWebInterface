@@ -826,7 +826,7 @@ foreach ($plugins as $result) {
                                         <label class="col-md-12" for="WEBMAIL_URL"><?php echo __("Webmail URL"); ?></label>  
                                         <div class="col-md-12">
                                             <input id="WEBMAIL_URL" name="WEBMAIL_URL" type="text" value="<?php echo $config["WEBMAIL_URL"]; ?>" class="form-control input-md">
-                                            <span class="help-block"><?php echo __("Leave blank for default or enter 'disabled' to disable."); ?></span>  
+                                            <span class="help-block"><?php echo __("Leave blank or enter 'disabled' to disable."); ?></span>  
                                         </div>
                                     </div>
                                     <div class="form-group">

@@ -417,7 +417,7 @@ require '../includes/arrays.php'; include("../includes/version.php");
                         <label class="col-md-4 control-label" for="WEBMAIL_URL">Webmail URL</label>  
                         <div class="col-md-4">
                             <input id="WEBMAIL_URL" name="WEBMAIL_URL" type="text" placeholder="http://webmail.myhost.com" class="form-control input-md">
-                            <span class="help-block">Leave blank for default or enter 'disabled' to disable.</span>  
+                            <span class="help-block">Leave blank or enter 'disabled' to disable.</span>  
                         </div>
                     </div>
 

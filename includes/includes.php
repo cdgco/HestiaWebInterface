@@ -290,10 +290,7 @@ if(checkService('vsftpd') !== false || checkService('proftpd') !== false) {
 }
 else { $ftpurl = ''; }
 if(checkService('exim') !== false) {
-    if($config["WEBMAIL_URL"] == ''){
-        $webmailurl = $vst_ssl . $config["HESTIA_HOST_ADDRESS"] . '/webmail';
-    }
-    elseif($config["WEBMAIL_URL"] == 'disabled'){
+    if($config["WEBMAIL_URL"] == '' || $config["WEBMAIL_URL"] == 'disabled'){
         $webmailurl = '';
     }
     else{
@@ -303,7 +300,7 @@ if(checkService('exim') !== false) {
 else { $webmailurl = ''; }
 if(checkService('mysql') !== false || checkService('mariadb') !== false) {
     if($config["PHPMYADMIN_URL"] == ''){
-        $phpmyadmin = $vst_ssl . $config["HESTIA_HOST_ADDRESS"] . '/phpmyadmin';
+        $phpmyadmin = 'http://' . $config["HESTIA_HOST_ADDRESS"] . '/phpmyadmin';
     }
     elseif($config["PHPMYADMIN_URL"] == 'disabled'){
         $phpmyadmin = '';
@@ -315,7 +312,7 @@ if(checkService('mysql') !== false || checkService('mariadb') !== false) {
 else { $phpmyadmin = ''; }
 if(checkService('postgresql') !== false) {
     if($config["PHPPGADMIN_URL"] == ''){
-        $phppgadmin = $vst_ssl . $config["HESTIA_HOST_ADDRESS"] . '/phppgadmin';
+        $phppgadmin = 'http://' . $config["HESTIA_HOST_ADDRESS"] . '/phppgadmin';
     }
     elseif($config["PHPPGADMIN_URL"] == 'disabled'){
         $phppgadmin = '';
