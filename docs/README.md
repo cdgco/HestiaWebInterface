@@ -1,5 +1,7 @@
 # Hestia Web Interface v0.1.0-Beta
 <hr>
+	
+!> Beta Pre Release: Hestia Web Interface is still in beta and is available as a pre-release. Therefore there may still be missing features and bugs. If you encounter an error or have suggestions, please tell us either through GitHub Issues or the support section
 
 ## About
 
