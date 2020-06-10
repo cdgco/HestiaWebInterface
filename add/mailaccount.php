@@ -341,7 +341,7 @@ foreach ($plugins as $result) {
                                                                     587<br>
                                                                     STARTTLS<br>	
                                                                     <?php echo __("Normal Password"); ?>	<br>
-                                                                    <a href="<?php echo $webmailurl; ?>"><?php echo $webmailurl; ?></a><br>
+                                                                    <a href="http://webmail.<?php echo $requestdomain; ?>">http://webmail.<?php echo $requestdomain; ?></a><br>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -375,7 +375,7 @@ foreach ($plugins as $result) {
                                                                     465<br>
                                                                     SSL<br>	
                                                                     <?php echo __("Normal Password"); ?><br>
-                                                                    <a href="<?php echo $webmailurl; ?>"><?php echo $webmailurl; ?></a><br>
+                                                                    <a href="http://webmail.<?php echo $requestdomain; ?>">http://webmail.<?php echo $requestdomain; ?></a><br>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -409,7 +409,7 @@ foreach ($plugins as $result) {
                                                                     25<br>
                                                                     <?php echo __("No Encryption"); ?><br>	
                                                                     <?php echo __("Normal Password"); ?><br>
-                                                                    <a href="<?php echo $webmailurl; ?>"><?php echo $webmailurl; ?></a><br>
+                                                                    <a href="http://webmail.<?php echo $requestdomain; ?>">http://webmail.<?php echo $requestdomain; ?></a><br>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -456,7 +456,7 @@ foreach ($plugins as $result) {
                                                                     587<br>
                                                                     STARTTLS<br>	
                                                                     <?php echo __("Normal Password"); ?><br>
-                                                                    <a href="<?php echo $webmailurl; ?>"><?php echo $webmailurl; ?></a><br>
+                                                                    <a href="http://webmail.<?php echo $requestdomain; ?>">http://webmail.<?php echo $requestdomain; ?></a><br>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -490,7 +490,7 @@ foreach ($plugins as $result) {
                                                                     465<br>
                                                                     SSL<br>	
                                                                     <?php echo __("Normal Password"); ?><br>
-                                                                    <a href="<?php echo $webmailurl; ?>"><?php echo $webmailurl; ?></a><br>
+                                                                    <a href="http://webmail.<?php echo $requestdomain; ?>">http://webmail.<?php echo $requestdomain; ?></a><br>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -524,7 +524,7 @@ foreach ($plugins as $result) {
                                                                     25<br>
                                                                     <?php echo __("No Encryption"); ?><br>	
                                                                     <?php echo __("Normal Password"); ?><br>
-                                                                    <a href="<?php echo $webmailurl; ?>"><?php echo $webmailurl; ?></a><br>
+                                                                    <a href="http://webmail.<?php echo $requestdomain; ?>">http://webmail.<?php echo $requestdomain; ?></a><br>
                                                                 </p>
                                                             </div>
                                                         </div>

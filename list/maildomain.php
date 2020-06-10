@@ -260,6 +260,7 @@ foreach ($plugins as $result) {
                                                             echo '<span class="label label-table label-danger">' . __("Suspended") . '</span>';} 
                                                         echo '</td>
                                                         <td class="resone" data-sort-value="' . $maildata[$x1]['DATE'] . '">' . $maildata[$x1]['DATE'] . '</td><td>
+                                                            <a href="http://mail.'. $requestmail . '?_user='.$mailname[$x1] . '@' . $requestmail.'" target="_blank"><button type="button" class="btn color-button btn-outline btn-circle btn-md m-r-5" data-toggle="tooltip" data-original-title="' . __("Open Webmail") . '"><i class="fa fa-envelope-open-o"></i></button></a>    
                                                             <a href="../edit/mailaccount.php?domain=' . $requestmail . '&account=' . $mailname[$x1] . '"><button type="button" class="btn color-button btn-outline btn-circle btn-md m-r-5" data-toggle="tooltip" data-original-title="' . __("Edit") . '"><i class="ti-pencil-alt"></i></button></a>';
 
                                                             if ($initialusername == "admin" && $maildata[$x1]['SUSPENDED'] == 'no') { echo '<button type="button" onclick="confirmSuspend(\'' . $mailname[$x1] . '\')" data-toggle="tooltip" data-original-title="' . __("Suspend") . '" class="btn color-button btn-outline btn-circle btn-md m-r-5"><i class="ti-lock"></i></button>'; }

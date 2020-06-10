@@ -292,7 +292,7 @@ foreach ($plugins as $result) {
                                                         echo '</td>
                                                         <td class="resone" data-sort-value="' . $domaindata[$x1]['DATE'] . '">' . $domaindata[$x1]['DATE'] . '</td>
                                                         <td>
-                                                            <a href="http'; if($domaindata[$x1]['SSL'] == "yes"){ echo 's'; } echo '://' . $domainname[$x1] . '"><button type="button" data-toggle="tooltip" data-original-title="' . __("Open") . '" class="btn color-button btn-outline btn-circle btn-md m-r-5"><i class="fa fa-external-link"></i></button></a>
+                                                            <a href="http'; if($domaindata[$x1]['SSL'] == "yes"){ echo 's'; } echo '://' . $domainname[$x1] . '" target="_blank"><button type="button" data-toggle="tooltip" data-original-title="' . __("Open") . '" class="btn color-button btn-outline btn-circle btn-md m-r-5"><i class="fa fa-external-link"></i></button></a>
                                                             <a href="../edit/domain.php?domain=' . $domainname[$x1] . '"><button type="button" data-toggle="tooltip" data-original-title="' . __("Edit") . '" class="btn color-button btn-outline btn-circle btn-md m-r-5"><i class="ti-pencil-alt"></i></button></a>
                                                             <a href="../log/access.php?domain=' . $domainname[$x1] . '"><button type="button" data-toggle="tooltip" data-original-title="' . __("View Logs") . '" class="btn color-button btn-outline btn-circle btn-md m-r-5"><i class="ti-menu-alt"></i></button></a>';
 
