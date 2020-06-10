@@ -20,7 +20,9 @@ echo "# Hestia Web Interface v$VERSION
 
 ## About
 
-Hestia Web Interface is a PHP Control Panel and Web Interface that integrates with the HestiaCP API to provide a beautiful user friendly experience. HWI features the ability to rebrand the control panel, change the theme, install it wherever you want, restrict access to users, easily edit options and offers integrations to services such as Google Analytics, Cloudflare, Interakt and many more coming soon. 
+Hestia Web Interface is a PHP Control Panel and Web Interface that integrates with the HestiaCP API to provide a beautiful user friendly experience. 
+
+HWI features the ability to rebrand the control panel, change the theme, install it wherever you want, restrict access to users, easily edit options and offers integrations to services such as Google Analytics, Cloudflare, Interakt and many more coming soon. 
 
 ## Features
 
@@ -28,7 +30,7 @@ Hestia Web Interface is a PHP Control Panel and Web Interface that integrates wi
 - Dynamic design with mobile support
 - Multiple themes including dark theme
 - Integrations with Auth0, Cloudflare, Interakt, Net2FTP and Google Analytics
-- Plugin system with webmail (Rainloop), FTP (MonstaFTP) and billing plugins
+- Plugin system with webmail (Rainloop), FTP (MonstaFTP) and billing plugins coming soon.
 - Web based installation and configuration within admin panel
 
 ## Demo
