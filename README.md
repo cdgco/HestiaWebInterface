@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/github/license/cdgco/HestiaWebInterface)](https://choosealicense.com/licenses/lgpl-3.0/)
 [![Size](https://img.shields.io/github/repo-size/cdgco/HestiaWebInterface)](https://github.com/cdgco/HestiaWebInterface/releases)
 
-Hestia Web Interface is a PHP control panel and interface that integrates with HestiaCP to provide a beautiful user friendly experience. 
+Hestia Web Interface is a PHP control panel and interface that integrates with [HestiaCP](https://hestiacp.com) to provide a beautiful user friendly experience. 
 
-HWI features the ability to rebrand the control panel, change the theme, install it wherever you want, restrict access to users, easily edit options and offers integrations to services such as Auth0, Google Analytics, Cloudflare, Interakt and plugins for webmail (rainloop), FTP (Monsta FTP), and billing (WIP).
+HWI features the ability to rebrand the control panel, change the theme, install it wherever you want, restrict access to users, easily edit options and offers integrations to services such as Auth0, Google Analytics, Cloudflare and Interakt.
 
 For installation, details, live demo and technical information, visit the [HWI Documentation](http://hwi.cdgtech.one)
 
