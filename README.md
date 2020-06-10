@@ -10,3 +10,7 @@ Hestia Web Interface is a PHP control panel and interface that integrates with H
 HWI features the ability to rebrand the control panel, change the theme, install it wherever you want, restrict access to users, easily edit options and offers integrations to services such as Auth0, Google Analytics, Cloudflare, Interakt and plugins for webmail (rainloop), FTP (Monsta FTP), and billing (WIP).
 
 For installation, details, live demo and technical information, visit the [HWI Documentation](http://hwi.cdgtech.one)
+
+<hr>
+
+Using [VestaCP](https://vestacp.com)? Check out our sister project, [Vesta Web Interface](https://github.com/cdgco/VestaWebInterface).
