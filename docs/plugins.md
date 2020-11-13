@@ -4,6 +4,8 @@ The HWI Plugin System allows simple development and installation for custom apps
 ### Plugin List
 
 - [example-plugin](https://github.com/cdgco/HestiaWebInterface/tree/master/plugins/example-plugin) - Template for developing plugins for Hestia Web Interface
+- [Monsta FTP](https://github.com/cdgco/vwi-ftp) - Web FTP Client Plugin for Hestia Web Interface
+- [File Manager](https://github.com/cdgco/hwi-fm) - Web File Manager (SFTP/FTP) for Hestia Web Interface
 
 ### Development Instructions:
 1. Name your project somthing unique as there cannot be two plugins with the same name.
@@ -15,5 +17,5 @@ The HWI Plugin System allows simple development and installation for custom apps
 ### Installation Instructions:
 
 1. Upload your plugin to the 'plugins' folder of your HWI installation.
-2. Edit the HWI settings from either the settings page in the admin panel or from your MySQL database and add the plugin name to the comman seperated plugin list exactly like the name appears on the uploaded folder.
+2. Go to the Plugins section of the Admin Panel and click the "Enable" button on the plugin, or edit the HWI settings from either the settings page in the admin panel or from your MySQL database and add the plugin name to the plugin list.
 3. Follow any further instructions as specified by the developer.
