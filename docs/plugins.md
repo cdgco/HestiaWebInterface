@@ -5,7 +5,7 @@ The HWI Plugin System allows simple development and installation for custom apps
 
 - [example-plugin](https://github.com/cdgco/HestiaWebInterface/tree/master/plugins/example-plugin) - Template for developing plugins for Hestia Web Interface
 - [Monsta FTP](https://github.com/cdgco/vwi-ftp) - Web FTP Client Plugin for Hestia Web Interface
-- [File Manager](https://github.com/cdgco/hwi-fm) - Web File Manager (SFTP/FTP) for Hestia Web Interface
+- [File Manager](https://github.com/cdgco/vh-fm) - Web File Manager (SFTP/FTP) for Hestia Web Interface
 
 ### Development Instructions:
 1. Name your project somthing unique as there cannot be two plugins with the same name.
