@@ -1,5 +1,5 @@
 <?php
-session_set_cookie_params(['samesite' => 'none']); 
+session_set_cookie_params(['SameSite' => 'None', 'Secure' => true]); 
 session_start();
 
 define('HESTIA_CMD', '/usr/bin/sudo /usr/local/hestia/bin/');
@@ -42,7 +42,7 @@ if(!isset($_SESSION['user_combined_ip'])){
 // Checking user to use session from the same IP he has been logged in
 if($_SESSION['user_combined_ip'] != $user_combined_ip && $_SERVER['REMOTE_ADDR'] != '127.0.0.1'){
     session_destroy();
-    session_set_cookie_params(['samesite' => 'none']);
+    session_set_cookie_params(['SameSite' => 'None', 'Secure' => true]);
     session_start();
     $_SESSION['request_uri'] = $_SERVER['REQUEST_URI'];
     header("Location: /login/");
@@ -52,7 +52,7 @@ if($_SESSION['user_combined_ip'] != $user_combined_ip && $_SERVER['REMOTE_ADDR']
 // Check system settings
 if ((!isset($_SESSION['VERSION'])) && (!defined('NO_AUTH_REQUIRED'))) {
     session_destroy();
-    session_set_cookie_params(['samesite' => 'none']); 
+    session_set_cookie_params(['SameSite' => 'None', 'Secure' => true]); 
     session_start();
     $_SESSION['request_uri'] = $_SERVER['REQUEST_URI'];
     header("Location: /login/");

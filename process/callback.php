@@ -25,7 +25,7 @@
 if(isset($_GET['state'])) {
     unset($_GET['state']);
 }
-session_set_cookie_params(['samesite' => 'none']); session_start();
+ session_start();
 $configlocation = "../includes/";
 if (file_exists( '../includes/config.php' )) { require( '../includes/includes.php'); }  else { header( 'Location: ../install' ); exit(); };
 

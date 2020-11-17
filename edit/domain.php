@@ -22,7 +22,7 @@
 *
 */
 
-session_set_cookie_params(['samesite' => 'none']); session_start();
+ session_start();
 $configlocation = "../includes/";
 if (file_exists( '../includes/config.php' )) { require( '../includes/includes.php'); }  else { header( 'Location: ../install' ); exit();};
 
@@ -77,7 +77,7 @@ $webstats = array_values(json_decode(curl_exec($curl6), true));
 $sysconfigdata = array_values(json_decode(curl_exec($curl7), true))[0];
 if ($domainname[0] == '') { header('Location: ../list/web.php'); }
 if(isset($admindata['LANGUAGE'])){ $locale = $ulang[$admindata['LANGUAGE']]; }
-_setlocale(LC_CTYPE, $locale); _setlocale(LC_MESSAGES, $locale);
+_setlocale('LC_CTYPE', $locale); _setlocale('LC_MESSAGES', $locale);
 _bindtextdomain('messages', '../locale');
 _textdomain('messages');
 

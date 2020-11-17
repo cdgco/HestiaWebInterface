@@ -1,5 +1,5 @@
 <?php 
-
+ini_set('display_errors', 0);
 /** 
 *
 * Hestia Web Interface
@@ -79,10 +79,6 @@ require '../includes/arrays.php';
                             <tr>
                                 <td style="font-size:16px;">PHP File Uploads (On):</td>
                                 <td style="font-size:16px;"><span style="color:<?php if(ini_get('file_uploads') == 1) {echo "limegreen";  $a6 = 0; } else { echo "red";  $a6 = 1; } ?>"><?php if(ini_get('file_uploads') == 1) {echo "Enabled"; } else { echo "Disabled"; } ?></span></td> 
-                            </tr> 
-                            <tr>
-                                <td style="font-size:16px;">PHP Display Errors (Off):</td>
-                                <td style="font-size:16px;"><span style="color:<?php if(ini_get('display_errors') != 1) {echo "limegreen";  $a7 = 0; } else { echo "red";  $a7 = 1; } ?>"><?php if(ini_get('display_errors') != 1) {echo "Disabled"; } else { echo "Enabled"; } ?></span></td> 
                             </tr>  
                             <tr>
                                 <td style="font-size:16px;">'includes/config.php' Does Not Exist:</td>
@@ -105,9 +101,9 @@ require '../includes/arrays.php';
                         <div class="form-group" style="float:right;">
                             <label class="col-md-4 control-label" for="singlebutton"></label>
                             <div class="col-md-4"> 
-                                <?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a7+$a8+$a9+$a10+$a11) != 0) { echo '<span class="d-inline-block" boundary="viewport" tabindex="0" data-toggle="tooltip" title="Please Meet All Requirements">'; } ?>
-                                <button class="<?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a7+$a8+$a9+$a10+$a11) != 0) { echo "disabled"; } ?> btn btn-primary" <?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a7+$a8+$a9+$a10+$a11) != 0) { echo "disabled"; } ?>>Continue</button>
-                                <?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a7+$a8+$a9+$a10+$a11) != 0) { echo '</span>'; } ?>
+                                <?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a8+$a9+$a10+$a11) != 0) { echo '<span class="d-inline-block" boundary="viewport" tabindex="0" data-toggle="tooltip" title="Please Meet All Requirements">'; } ?>
+                                <button class="<?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a8+$a9+$a10+$a11) != 0) { echo "disabled"; } ?> btn btn-primary" <?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a8+$a9+$a10+$a11) != 0) { echo "disabled"; } ?>>Continue</button>
+                                <?php if(($a1+$a2+$a2+$a3+$a5+$a6+$a8+$a9+$a10+$a11) != 0) { echo '</span>'; } ?>
                             </div>
                         </div>
 
