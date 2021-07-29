@@ -17,5 +17,4 @@ php -r 'error_reporting(0); include "includes/includes.php"; echo "\n".hwicryptx
 
 echo hwicryptx('PASSWORD OR API KEY HERE');
 ```
-
 Simply copy your encrypted credentials into MySQL.
