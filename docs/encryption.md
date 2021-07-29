@@ -14,5 +14,6 @@ php -r 'error_reporting(0); include "includes/includes.php"; echo "\n".hwicryptx
 2. Create the following PHP file in your install directory, replacing "PASSWORD OR API KEY HERE" with your HestiaCP admin password or API key. Then visit the PHP file to retrieve your encrypted password, deleting the file when complete.
 ```php
 <?php include 'includes/includes.php';
+
 echo hwicryptx('PASSWORD OR API KEY HERE');
 ```
