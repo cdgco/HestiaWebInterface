@@ -150,9 +150,9 @@ Ex: 'mydomain.com' or '8.8.8.8'.
 * HESTIA\_SSL\_ENABLED: Enter 'true' or 'false' depending on if SSL is enabled for your HestiaCP installation. 'true' by default. Enter 'true' if your HestiaCP url (mydomain.com:8083) starts with 'https://'.
 * HESTIA\_PORT: Port of your HestiaCP installation. '8083' by default.
 * HESTIA\_METHOD: Choose whether to use an API Key or username and password for API authentication. 'api' or 'credentials'.
-* HESTIA\_API\_KEY: HestiaCP generated API Key if 'api' enabled.
+* HESTIA\_API\_KEY: AES-256-CBC encrypted HestiaCP generated API Key if 'api' enabled. Uses encryption keys stored in config.php (KEY3 & KEY4). Read [Encrypting Credentials](encryption) for more info.
 * HESTIA\_ADMIN\_UNAME: Username of the HestiaCP admin account if 'credentials' enabled. 'admin' by default.
-* HESTIA_ADMIN_PW: AES-256-CBC encrypted password for HestiaCP admin account if 'credentials' enabled. Uses encryption keys stored in config.php (KEY3 & KEY4).
+* HESTIA_ADMIN_PW: AES-256-CBC encrypted password for HestiaCP admin account if 'credentials' enabled. Uses encryption keys stored in config.php (KEY3 & KEY4). Read [Encrypting Credentials](encryption) for more info.
 * KEY1: Encryption Key for backend authentication. Replace with random string.
 * KEY2: Encryption Key for backend authentication. Replace with random string.
 * WARNINGS_ENABLED: Choose who should see warning messages about server connection and security issues. Accepted values: 'none', 'admin' and 'all'.
