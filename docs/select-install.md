@@ -19,7 +19,7 @@ When promted during the automatic installer to "Enter the full web address of yo
 #### Step 4:
 Configure Hestia Web Interface through the web based configurator or manual configuration.
 
-* Web Based Configuration:
+Web Based Configuration:
     
  - chmod 'includes' folder, 'tmp' foler and 'plugins/images/uploads' folder to 777.
     ```shell
@@ -38,11 +38,7 @@ Configure Hestia Web Interface through the web based configurator or manual conf
 
   - Continue the installation and configure HWI to your liking, entering the desired settings in the web based configurator. For help, visit the [configuration documentation](web-config).
 
-  - chmod 'includes' folder to 755.
-    ```shell
-    chmod 755 includes
-    ```
-* Manual Configuration
+Manual Configuration
 
  - Create a new MySQL / MariaDB database and user or use an existing MySQL / MariaDB database and user and enter the details into the installer. The specified user must have basic read and write access to the database.
 
@@ -59,6 +55,26 @@ Configure Hestia Web Interface through the web based configurator or manual conf
  - Use the hwi_config.sql file to initialize your the hwi_config table in your database.
  
  - Edit the settings within the hwi_config table following the instructions from the [manual config](manual-config) page.
+
+#### Step 5:
+Enable API Access.
+
+- Log into your original HestiaCP panel, e.g. https://MY-HESTIA-SERVER:8083
+- Visit the Server Configuration page, https://MY-HESTIA-SERVER:8083/edit/server
+- Under Server -> Security, ensure that API Access is enabled and enter the public IP address of the web server running Hestia Web Interface in the 'Allowed IP addresses for API' section (even if Hestia Web Interface is running on the same server as HestiaCP).
+- Save your configuration.
+
+#### Step 6:
+Secure the installation folder.
+
+
+chmod the 'includes' folder to 755 after configuration is complete.
+Failure to do so will leave your configuration file open to the public to be re-written or broken.
+
+Example:
+```shell
+chmod 755 includes
+```
 
 Installation is now complete. Visit your URL to start using Hestia Web Interface.
 
