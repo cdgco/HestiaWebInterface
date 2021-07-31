@@ -33,6 +33,14 @@ Ensure that your selected database does not have an existing table named hwi_con
 Continue the installation and configure HWI to your liking, entering the desired settings in the web based configurator. For help, visit the [configuration documentation](web-config).
 
 #### Step 4:
+Enable API Access.
+
+- Log into your original HestiaCP panel, e.g. https://MY-HESTIA-SERVER:8083
+- Visit the Server Configuration page, https://MY-HESTIA-SERVER:8083/edit/server
+- Under Server -> Security, ensure that API Access is enabled and enter the public IP address of the web server running Hestia Web Interface in the 'Allowed IP addresses for API' section (even if Hestia Web Interface is running on the same server as HestiaCP).
+- Save your configuration.
+
+#### Step 5:
 Secure the installation folder.
 
 
@@ -43,6 +51,7 @@ Example:
 ```shell
 chmod 755 includes
 ```
+
 Installation is now complete. Visit your URL to start using Hestia Web Interface.
 
 
