@@ -22,7 +22,7 @@
 *
 */
 
-if(strpos($_SERVER[HTTP_REFERER], 'admin/list/graphs.php')) {
+//if(strpos($_SERVER[HTTP_REFERER], 'admin/list/graphs.php')) {
     $real_path = realpath($_SERVER["DOCUMENT_ROOT"].$_SERVER['QUERY_STRING']);
     if (empty($real_path)) exit;
     $dir_name = dirname($real_path);
@@ -30,8 +30,8 @@ if(strpos($_SERVER[HTTP_REFERER], 'admin/list/graphs.php')) {
     if ($dir_name != $_SERVER["DOCUMENT_ROOT"].'/rrd') exit;
     header("X-Accel-Redirect: ".$_SERVER['QUERY_STRING']);
     header("Content-Type: image/png");
-}
-else {
-    echo 'Access Denied';
-    exit();
-}
+//}
+//else {
+    //echo 'Access Denied';
+    //exit();
+//}
