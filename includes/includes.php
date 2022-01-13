@@ -84,7 +84,7 @@ else {
 
 // Grab Session data for username & status
 $initialusername = base64_decode($_SESSION['username']);
-$loggedin = base64_decode($_SESSION['loggedin']);
+$loggedin = (isset($_SESSION['loggedin'])) ? base64_decode($_SESSION['loggedin']) : "";
 
 // System for login as user
 if($initialusername == "admin" && isset($_SESSION['proxied']) && base64_decode($_SESSION['proxied']) != '')   {
