@@ -146,7 +146,7 @@ if ($config["HESTIA_METHOD"] == "api"){
     DEFINE('HESTIA_ADMIN_PW', '');
     $vst_password = '';
 
-    $deckey = hwicryptx($config["HESTIA_API_KEY"], d);
+    $deckey = hwicryptx($config["HESTIA_API_KEY"], 'd');
     DEFINE('HESTIA_API_KEY', $deckey);
     $vst_apikey = $deckey;
     
