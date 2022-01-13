@@ -83,7 +83,7 @@ else {
 
 
 // Grab Session data for username & status
-$initialusername = base64_decode($_SESSION['username']);
+$initialusername = (isset($_SESSION['username'])) ? base64_decode($_SESSION['username']) : "";
 $loggedin = (isset($_SESSION['loggedin'])) ? base64_decode($_SESSION['loggedin']) : "";
 
 // System for login as user
