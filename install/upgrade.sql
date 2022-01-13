@@ -26,7 +26,7 @@
 
 CREATE TABLE IF NOT EXISTS `hwi_auth0-users` (
   `HWI_USER` varchar(64) NOT NULL,
-  `AUTH0_USER` varchar(1024) NOT NULL
+  `AUTH0_USER` varchar(1024) NOT NULL,
   PRIMARY KEY (`HWI_USER`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
