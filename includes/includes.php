@@ -137,7 +137,7 @@ else{
 }
 $vst_url = $vst_ssl . $config["HESTIA_HOST_ADDRESS"] . ':' . $hestia_port . '/api/';
 $url8083 = $vst_ssl . $config["HESTIA_HOST_ADDRESS"] . ':' . $hestia_port;
-if(!isset($KEY3) || (isset($KEY3 && $KEY3 == '')) { $KEY3 = 'Default HWI Secret Key'; }
+if(!isset($KEY3) || (isset($KEY3) && $KEY3 == '')) { $KEY3 = 'Default HWI Secret Key'; }
 if(!isset($KEY4) || (isset($KEY4) && $KEY4 == '')) { $KEY4 = 'Default HWI Secret IV'; }
 if ($config["HESTIA_METHOD"] == "api"){
     DEFINE('HESTIA_ADMIN_UNAME', '');
