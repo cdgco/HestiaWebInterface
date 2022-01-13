@@ -44,10 +44,10 @@ if($configstyle != '2') {
     if (!$con) { $mysqldown = 'yes'; }
     $config = array(); $result=mysqli_query($con,"SELECT VARIABLE,VALUE FROM `" . $mysql_table . "config`");
     while ($row = mysqli_fetch_assoc($result)) { $config[$row["VARIABLE"]] = $row["VALUE"]; }
-    mysqli_free_result($result); 
+    if ($result) { mysqli_free_result($result); }
     $auth0_users = array(); $result=mysqli_query($con,"SELECT HWI_USER,AUTH0_USER FROM `" . $mysql_table . "auth0-users`");
     while ($row = mysqli_fetch_assoc($result)) { $auth0_users[$row["HWI_USER"]] = $row["AUTH0_USER"]; }
-    mysqli_free_result($result); mysqli_close($con);
+    if ($result) { mysqli_free_result($result); } mysqli_close($con);
 }
 else {
     // Method 2: Connection to MySQL, save config locally every 30 min, grab locally if connection fails.
@@ -59,10 +59,10 @@ else {
     else { 
         $config = array(); $result=mysqli_query($con,"SELECT VARIABLE,VALUE FROM `" . $mysql_table . "config`");
         while ($row = mysqli_fetch_assoc($result)) { $config[$row["VARIABLE"]] = $row["VALUE"]; }
-        mysqli_free_result($result); 
+        if ($result) { mysqli_free_result($result); }
 	$auth0_users = array(); $result=mysqli_query($con,"SELECT HWI_USER,AUTH0_USER FROM `" . $mysql_table . "auth0-users`");
 	while ($row = mysqli_fetch_assoc($result)) { $auth0_users[$row["HWI_USER"]] = $row["AUTH0_USER"]; }
-	mysqli_free_result($result); mysqli_close($con);
+	if ($result) { mysqli_free_result($result); } mysqli_close($con);
         if (!file_exists( $co1 . 'config.json' )) { 
             file_put_contents( $co1 . "config.json",json_encode($config));
         }  
