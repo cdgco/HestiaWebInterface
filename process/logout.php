@@ -27,7 +27,7 @@ if (file_exists( '../includes/config.php' )) { require( '../includes/includes.ph
 
 if($auth0) { $auth0->logout(); }
 
-if(base64_decode($_SESSION['loggedin']) == 'true') {}
+if(isset($_SESSION['loggedin']) && base64_decode($_SESSION['loggedin']) == 'true') {}
 else { header('Location: ../login.php'); exit();}
 
 if($initialusername == "admin" && isset($_SESSION['proxied']) && base64_decode($_SESSION['proxied']) != '')   {

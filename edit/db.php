@@ -25,7 +25,7 @@
 $configlocation = "../includes/";
 if (file_exists( '../includes/config.php' )) { require( '../includes/includes.php'); }  else { header( 'Location: ../install' ); exit();};
 
-if(base64_decode($_SESSION['loggedin']) == 'true') {}
+if(isset($_SESSION['loggedin']) && base64_decode($_SESSION['loggedin']) == 'true') {}
 else { header('Location: ../login.php?to=edit/db.php'.$urlquery.$_SERVER['QUERY_STRING']); exit(); }
 
 if(isset($dbenabled) && $dbenabled != 'true'){ header("Location: ../error-pages/403.html"); exit(); }
@@ -278,7 +278,7 @@ foreach ($plugins as $result) {
                                             <label class="sr-only" for="inlineFormInputGroup"><?php echo __("Username"); ?></label>
                                             <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                                                 <div class="input-group-addon"><?php print_r($displayname); ?>_</div>
-                                                <input type="text" class="form-control" autocomplete="new-password" name="v_dbuser" style="padding-left: 0.5%;" value="<?php $prefix = $uname . '_'; $str = $dbdata[0][DBUSER]; if (substr($str, 0, strlen($prefix)) == $prefix) { $str = substr($str, strlen($prefix));} print_r($str); ?>" required>
+                                                <input type="text" class="form-control" autocomplete="new-password" name="v_dbuser" style="padding-left: 0.5%;" value="<?php $prefix = $uname . '_'; $str = $dbdata[0]['DBUSER']; if (substr($str, 0, strlen($prefix)) == $prefix) { $str = substr($str, strlen($prefix));} print_r($str); ?>" required>
                                             </div>
                                         </div>
                                     </div>

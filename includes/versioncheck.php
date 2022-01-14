@@ -39,17 +39,18 @@ curl_setopt_array($ch, array(
 $data = curl_exec($ch);
 curl_close($ch);
 $data2 = json_decode($data, true);
+if (isset($data2['tag_name'])) {
+    $ghversion = $data2['tag_name'];
 
-$ghversion = $data2['tag_name'];
+    $ghsimplified = preg_replace("/[^0-9]/", "", $ghversion );
+    $currentsimplified = preg_replace("/[^0-9]/", "", $currentversion );
 
-$ghsimplified = preg_replace("/[^0-9]/", "", $ghversion );
-$currentsimplified = preg_replace("/[^0-9]/", "", $currentversion );
-
-if (isset($ghversion) && $ghversion != '') {
-    if ($ghversion <= $currentversion) { echo $currentversion; } 
-    elseif ( $ghsimplified[0] > $currentsimplified[0] || $ghsimplified[1] > $currentsimplified[1] ) {echo '<a href="https://github.com/cdgco/HestiaWebInterface/releases" style="text-decoration: underline;" data-toggle="tooltip" title="' . $ghversion . ' Now Available!">' . $currentversion . ' (Outdated)</a>';}
-    else {echo '<a href="https://github.com/cdgco/HestiaWebInterface/releases" style="text-decoration: underline;" data-toggle="tooltip" title="' . $ghversion . ' Now Available!">' . $currentversion . '</a>';}
-} 
-else { echo $currentversion;}
-
+    if (isset($ghversion) && $ghversion != '') {
+        if ($ghversion <= $currentversion) { echo $currentversion; } 
+        elseif ( $ghsimplified[0] > $currentsimplified[0] || $ghsimplified[1] > $currentsimplified[1] ) {echo '<a href="https://github.com/cdgco/HestiaWebInterface/releases" style="text-decoration: underline;" data-toggle="tooltip" title="' . $ghversion . ' Now Available!">' . $currentversion . ' (Outdated)</a>';}
+        else {echo '<a href="https://github.com/cdgco/HestiaWebInterface/releases" style="text-decoration: underline;" data-toggle="tooltip" title="' . $ghversion . ' Now Available!">' . $currentversion . '</a>';}
+    } 
+    else { echo $currentversion; }
+}
+else { echo $currentversion; }
 ?>

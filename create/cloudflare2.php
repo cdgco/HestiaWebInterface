@@ -24,7 +24,7 @@
 
 $configlocation = "../includes/";
 if (file_exists( '../includes/config.php' )) { require( '../includes/includes.php'); }  else { header( 'Location: ../install' ); exit();};
-if(base64_decode($_SESSION['loggedin']) == 'true') {}
+if(isset($_SESSION['loggedin']) && base64_decode($_SESSION['loggedin']) == 'true') {}
 else { header('Location: ../login.php'); exit(); }
 
 if(isset($dnsenabled) && $dnsenabled != 'true'){ header("Location: ../error-pages/403.html"); exit(); }
@@ -286,7 +286,7 @@ curl_exec($curl4);
             echo '<input type="hidden" name="apiemail" value="'.CLOUDFLARE_EMAIL.'">';
             echo '<input type="hidden" name="apikey" value="'.CLOUDFLARE_API_KEY.'">';
             echo '<input type="hidden" name="username" value="'.$username.'">';
-            echo '<input type="hidden" name="returnlink" value="'. substr("http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI], 0, -5) . '3.php">';
+            echo '<input type="hidden" name="returnlink" value="'. substr("http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'], 0, -5) . '3.php">';
 
             ?>
         </form>

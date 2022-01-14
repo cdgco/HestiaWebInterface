@@ -398,6 +398,8 @@ if (isset($config["AUTH0_DOMAIN"], $config["AUTH0_CLIENT_ID"], $config["AUTH0_CL
 // HWI Functions
 
 function hwicrypt($cs,$ca='e') { 
+    global $KEY1;
+    global $KEY2;
     $op = false; $ecm ="AES-256-CBC"; $key=hash('sha256',$KEY1); $iv=substr(hash('sha256',$KEY2),0,16); 
     if($ca=='e'){
         $op=base64_encode(openssl_encrypt($cs,$ecm,$key,0,$iv));
@@ -408,7 +410,8 @@ function hwicrypt($cs,$ca='e') {
     return $op;
 }
 function hwicryptx($cs,$ca='e') { 
-
+    global $KEY3;
+    global $KEY4;
     $op = false; $ecm ="AES-256-CBC"; $key=hash('sha256',$KEY3); $iv=substr(hash('sha256',$KEY4),0,16); 
     if($ca=='e'){
         $op=base64_encode(openssl_encrypt($cs,$ecm,$key,0,$iv));
@@ -728,7 +731,7 @@ function notifications() {
         echo '<li class="dropdown hwi-notif">
                 <a class="dropdown-toggle waves-effect waves-light" href="javascript:void(0);">';
 
-                    if($notifications[0] != '') {
+                    if(isset($notifications[0]) && $notifications[0] != '') {
                         $ack1 = 0; 
                         $ack = 0;
                         do {
@@ -736,7 +739,7 @@ function notifications() {
                             $ack1++;
                         } while (isset($notifications[$ack1])); 
                     }
-                    if($ack != 0) { echo '<i id="bell" class="fa fa-bell"></i><div id="activenotification" class="notify"><span id="heartbeat" class="heartbit"></span><span id="point" class="point"></span>'; } 
+                    if(isset($ack) && $ack != 0) { echo '<i id="bell" class="fa fa-bell"></i><div id="activenotification" class="notify"><span id="heartbeat" class="heartbit"></span><span id="point" class="point"></span>'; } 
                 else { echo '<i class="fa fa-bell-o"></i><div class="notify">'; }
                 echo '</div>
                 </a>
@@ -744,7 +747,7 @@ function notifications() {
                     <li>
                         <div class="message-center">
                             <div class="mail-content" id="nonotifications"><hr><h5>' . __("No Notifications") . '</h5></div>';
-                                if($notifications[0] != '') {
+                                if(isset($notifications[0]) && $notifications[0] != '') {
                                     $x1 = 0;
                                     do {
                                         if($notifications[$x1]['ACK'] != 'yes') { echo '<div class="mail-content mail-content-notif" id="notification'.$notificationkeys[$x1].'"><hr>

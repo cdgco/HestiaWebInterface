@@ -46,7 +46,7 @@ $userInfo = $auth0->getUser();
 $auth0id = $userInfo['sub'];
 $key = array_search($auth0id, $auth0_users);
 if(isset($_SESSION['loggedin'])) {
-    if(base64_decode($_SESSION['loggedin']) == 'true') { 
+    if(isset($_SESSION['loggedin']) && base64_decode($_SESSION['loggedin']) == 'true') { 
         if(isset($auth0id) && $auth0id != '') {
             $con=mysqli_connect($mysql_server,$mysql_uname,$mysql_pw,$mysql_db);
             $v1 = mysqli_real_escape_string($con, $username);

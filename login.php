@@ -25,7 +25,7 @@
 $configlocation = "includes/";
 if (file_exists( 'includes/config.php' )) { require( 'includes/includes.php'); }  else { header( 'Location: install' ); exit(); };
 if(isset($_SESSION['loggedin'])) {
-    if(base64_decode($_SESSION['loggedin']) == 'true') { header('Location: index.php'); exit(); }
+    if(isset($_SESSION['loggedin']) && base64_decode($_SESSION['loggedin']) == 'true') { header('Location: index.php'); exit(); }
 }
 
 $postvars0 = array('hash' => $vst_apikey, 'user' => $vst_username,'password' => $vst_password,'cmd' => 'v-list-sys-info','arg1' => 'json');
@@ -37,7 +37,10 @@ curl_setopt($curl0, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curl0, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curl0, CURLOPT_POST, true);
 curl_setopt($curl0, CURLOPT_POSTFIELDS, http_build_query($postvars0));
-$serverconnection = array_values(json_decode(curl_exec($curl0), true))[0]['OS'];
+$curl0result = json_decode(curl_exec($curl0), true);
+if ($curl0result != '') {
+    $serverconnection = array_values($curl0result)[0]['OS'];
+}
 if(isset($_POST['username'])){
 
     if(isset($_POST['password'])){

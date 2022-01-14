@@ -25,7 +25,7 @@
 $configlocation = "includes/";
 if (file_exists( 'includes/config.php' )) { require 'includes/includes.php'; }  else { header( 'Location: install' );  exit(); }
 
-if(base64_decode($_SESSION['loggedin']) == 'true') {}
+if(isset($_SESSION['loggedin']) && base64_decode($_SESSION['loggedin']) == 'true') {}
 else { header('Location: login.php'); exit(); }
 
 $postvarsx = array('hash' => $vst_apikey, 'user' => $vst_username,'password' => $vst_password,'cmd' => 'v-list-sys-info','arg1' => 'json');
@@ -37,7 +37,10 @@ curl_setopt($curlx, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($curlx, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($curlx, CURLOPT_POST, true);
 curl_setopt($curlx, CURLOPT_POSTFIELDS, http_build_query($postvarsx));
-$serverconnection = array_values(json_decode(curl_exec($curlx), true))[0]['OS'];
+$curlXresult = json_decode(curl_exec($curlx), true);
+if ($curlXresult != '') {
+    $serverconnection = array_values($curlXresult)[0]['OS'];
+}
 if(!isset($serverconnection)) { unset($_SESSION['username']); setcookie('username', null, -1, '/; samesite=none'); unset($_SESSION['loggedin']); setcookie('loggedin', null, -1, '/; samesite=none'); header('Location: login.php'); exit;}
 
 $postvars = array(
