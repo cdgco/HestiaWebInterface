@@ -10,3 +10,4 @@ bfg.jar
 config.json
 test.php
 yarn-error.log
+.DS_Store
