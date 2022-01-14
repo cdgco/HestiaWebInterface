@@ -24,7 +24,12 @@ ini_set('display_errors', 0);
 *
 */
 
-
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    ini_set('session.cookie_secure', "1"); 
+    ini_set('session.cookie_httponly', "1");
+    ini_set('session.cookie_samesite','None'); 
+    session_start();
+}
 /*
 * Hestia Web Interface Configuration, Variables and Functions
 */

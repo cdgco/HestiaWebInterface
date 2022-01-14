@@ -1,6 +1,5 @@
 <?php
 
- session_start();
 $configlocation = "../../includes/";
 if (file_exists( '../../includes/config.php' )) { require( '../../includes/includes.php'); }  else { header( 'Location: ../../install' ); exit();};
 

@@ -22,7 +22,6 @@
 *
 */
 
- session_start();
 $configlocation = "../includes/";
 if (file_exists( '../includes/config.php' )) { require( '../includes/includes.php'); }  else { header( 'Location: ../install' ); exit(); };
 
@@ -37,8 +36,9 @@ if($initialusername == "admin" && isset($_SESSION['proxied']) && base64_decode($
     header("Location: ../admin/list/users.php");
 }  
 else {
-     session_start();
-    session_destroy();
+    if (session_status() === PHP_SESSION_ACTIVE) {
+        session_destroy();
+    }
     header('Location: ../login.php'); 
     exit;
 }

@@ -22,7 +22,6 @@
 *
 */
 
- session_start();
 $configlocation = "../includes/";
 
 // Include settings & variables

@@ -22,7 +22,6 @@
 *
 */
 
- session_start();
 $configlocation = "../includes/";
 // Include settings & variables
 if (file_exists( '../includes/config.php' )) { require( '../includes/includes.php'); }  else { header( 'Location: ../install' ); exit();};
