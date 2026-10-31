@@ -5,7 +5,7 @@
 * Hestia Web Interface
 *
 * Copyright (C) 2020 Carter Roeser <carter@cdgtech.one>
-* https://cdgco.github.io/HestiaWebInterface
+* https://cjroeser.github.io/HestiaWebInterface
 *
 * Hestia Web Interface is free software: you can redistribute it and/or modify
 * it under the terms of version 3 of the GNU General Public License as published 
@@ -18,7 +18,7 @@
 * 
 * You should have received a copy of the GNU General Public License
 * along with Hestia Web Interface.  If not, see
-* <https://github.com/cdgco/HestiaWebInterface/blob/master/LICENSE>.
+* <https://github.com/cjroeser/HestiaWebInterface/blob/master/LICENSE>.
 *
 */
 
@@ -72,7 +72,7 @@ if (isset($_POST['user']) && isset($_POST['password'])) {
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://cdn.jsdelivr.net/gh/cdgco/HestiaWebInterface@0.1.0-Beta/css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/cjroeser/HestiaWebInterface@0.1.0-Beta/css/style.css" rel="stylesheet">
     </head>
     <body class="fix-header">
         <div class="preloader">

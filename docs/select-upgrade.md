@@ -7,7 +7,7 @@ Delete all files in your existing HWI web directory except includs/config.php. E
 
 
 #### Step 2:
-[Download the latest release](https://github.com/cdgco/HestiaWebInterface/archive/v0.1.0-Beta.zip) of HWI from GitHub.
+[Download the latest release](https://github.com/cjroeser/HestiaWebInterface/archive/v0.1.0-Beta.zip) of HWI from GitHub.
 
 #### Step 3:
 Extract Hestia Web Interface to the blank domain directory.
@@ -16,7 +16,7 @@ Extract Hestia Web Interface to the blank domain directory.
 #### Step 4:
 Update the Hestia Web Interface backend on your Hestia server.
 ```shell
-bash <(curl -s https://cdgco.github.io/hst-backend)
+bash <(curl -s https://cjroeser.github.io/hst-backend)
 ```
 
 Upgrade Complete

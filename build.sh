@@ -63,7 +63,7 @@ sed -i "s#HestiaWebInterface@.*/plugins/images/favicon.png#HestiaWebInterface@$V
 sed -i "s#HestiaWebInterface@.*/css/style.css#HestiaWebInterface@$VERSION/css/style.css#g" install/hestia/web/templates/r_3.php
 sed -i "s#HestiaWebInterface@.*/css/colors/default.css#HestiaWebInterface@$VERSION/css/colors/default.css#g" install/hestia/web/templates/r_3.php
 sed -i "s#HestiaWebInterface@.*/js/main.js#HestiaWebInterface@$VERSION/js/main.js#g" install/hestia/web/templates/r_3.php
-sed -i "s#HestiaWebInterface@.*/css/colors/blue.css#HestiaWebInterface@$VERSION/css/style.css\" rel=\"stylesheet\"><link href=\"https://cdn.jsdelivr.net/gh/cdgco/HestiaWebInterface@$VERSION/css/colors/blue.css#g" .htaccess
+sed -i "s#HestiaWebInterface@.*/css/colors/blue.css#HestiaWebInterface@$VERSION/css/style.css\" rel=\"stylesheet\"><link href=\"https://cdn.jsdelivr.net/gh/cjroeser/HestiaWebInterface@$VERSION/css/colors/blue.css#g" .htaccess
 
 printf "Enter the changelog in HTML (<br>) format: "
 read CHANGELOG

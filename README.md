@@ -1,9 +1,9 @@
-![HWI Banner](https://raw.githubusercontent.com/cdgco/HestiaWebInterface/master/HWI%20Banner.png)
+![HWI Banner](https://raw.githubusercontent.com/cjroeser/HestiaWebInterface/master/HWI%20Banner.png)
 
-[![Downloads](https://img.shields.io/github/downloads/cdgco/HestiaWebInterface/total)](https://github.com/cdgco/HestiaWebInterface/releases)
-[![JSDelivr](https://img.shields.io/jsdelivr/gh/hy/cdgco/HestiaWebInterface)](https://www.jsdelivr.com/package/gh/cdgco/HestiaWebInterface)
-[![License](https://img.shields.io/github/license/cdgco/HestiaWebInterface)](https://choosealicense.com/licenses/lgpl-3.0/)
-[![Size](https://img.shields.io/github/repo-size/cdgco/HestiaWebInterface)](https://github.com/cdgco/HestiaWebInterface/releases)
+[![Downloads](https://img.shields.io/github/downloads/cjroeser/HestiaWebInterface/total)](https://github.com/cjroeser/HestiaWebInterface/releases)
+[![JSDelivr](https://img.shields.io/jsdelivr/gh/hy/cjroeser/HestiaWebInterface)](https://www.jsdelivr.com/package/gh/cjroeser/HestiaWebInterface)
+[![License](https://img.shields.io/github/license/cjroeser/HestiaWebInterface)](https://choosealicense.com/licenses/lgpl-3.0/)
+[![Size](https://img.shields.io/github/repo-size/cjroeser/HestiaWebInterface)](https://github.com/cjroeser/HestiaWebInterface/releases)
 
 Hestia Web Interface is a PHP control panel and interface that integrates with [HestiaCP](https://hestiacp.com) to provide a beautiful user friendly experience. 
 
@@ -13,4 +13,4 @@ For installation, details, live demo and technical information, visit the [HWI D
 
 <hr>
 
-Using [VestaCP](https://vestacp.com)? Check out our sister project, [Vesta Web Interface](https://github.com/cdgco/VestaWebInterface).
+Using [VestaCP](https://vestacp.com)? Check out our sister project, [Vesta Web Interface](https://github.com/cjroeser/VestaWebInterface).

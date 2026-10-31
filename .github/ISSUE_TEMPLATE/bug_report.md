@@ -10,7 +10,7 @@ assignees: ''
 <!-- Before submitting issues, ensure that you have the latest version of VWI and followed the instructions at https://hwi.cdgtech.one/ -->
 
 **Server Environment**
-Run the command `bash <(curl -s https://cdgco.github.io/hst-debug)` and put the output below
+Run the command `bash <(curl -s https://cjroeser.github.io/hst-debug)` and put the output below
 
 ```
 PUT THE OUTPUT HERE

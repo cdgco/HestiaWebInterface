@@ -5,7 +5,7 @@
 * Hestia Web Interface
 *
 * Copyright (C) 2020 Carter Roeser <carter@cdgtech.one>
-* https://cdgco.github.io/HestiaWebInterface
+* https://cjroeser.github.io/HestiaWebInterface
 *
 * Hestia Web Interface is free software: you can redistribute it and/or modify
 * it under the terms of version 3 of the GNU General Public License as published 
@@ -18,7 +18,7 @@
 * 
 * You should have received a copy of the GNU General Public License
 * along with Hestia Web Interface.  If not, see
-* <https://github.com/cdgco/HestiaWebInterface/blob/master/LICENSE>.
+* <https://github.com/cjroeser/HestiaWebInterface/blob/master/LICENSE>.
 *
 */
 
